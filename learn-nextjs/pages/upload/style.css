@@ -1,0 +1,421 @@
+.upload_page {
+    margin: 0px auto;
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+    padding-left: 98px;
+    padding-right: 98px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.upload_page .upload_container {
+    max-width: 1100px;
+    box-shadow: rgb(0 0 0 / 6%) 0px 2px 8px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    padding: 24px 56px;
+    display: flex;
+    flex-direction: column;
+}
+.upload_page .upload_container span:first-child {
+    font-size: 22px;
+    color: rgba(22, 24, 35, 1);
+    line-height: 1.5;
+    font-weight: 700;
+}
+.upload_page .upload_container span:nth-child(2) {
+    font-size: 18px;
+    color: rgba(22, 24, 35, 0.5);
+    line-height: 1.5;
+    font-weight: 400;
+}
+.upload_page .upload_container .upload_content {
+    display: flex;
+    margin-top: 24px;
+    margin-bottom: 130px;
+}
+.upload_page .upload_container .upload_content .uploader {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    width: 260px;
+    height: 458px;
+    border: 2px dashed rgb(202, 202, 202);
+    border-radius: 10px;
+    position: relative;
+}
+.upload_page .upload_container .upload_content .uploader:hover {
+    background-color: rgb(248, 248, 248);
+    border-color: rgba(254, 44, 85, 1);
+}
+.upload_page .upload_container .upload_content .uploader input[type='file'] {
+    height: 100%;
+    width: 100%;
+    appearance: none;
+    opacity: 0;
+    z-index: 10;
+    cursor: pointer;
+}
+.upload_page .upload_container .upload_content .uploader .uploader_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+}
+.upload_page .upload_container .upload_content .uploader .uploader_card span:nth-child(2) {
+    margin-top: 24px;
+    color: rgba(22, 24, 35, 1);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.upload_page .upload_container .upload_content .uploader .uploader_card span:nth-child(3) {
+    margin-top: 4px;
+    margin-bottom: 24px;
+    color: rgba(22, 24, 35, 1);
+    font-size: 14px;
+    line-height: 1.5;
+}
+.upload_page .upload_container .upload_content .uploader .uploader_card span:nth-child(4) {
+    color: rgba(22, 24, 35, 0.5);
+    font-size: 14px;
+    line-height: 1.5;
+    width: 180px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+.upload_page .upload_container .upload_content .uploader .uploader_card button {
+    box-sizing: border-box;
+    appearance: none;
+    min-width: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    background-clip: padding-box;
+    width: 100%;
+    font-size: 16px;
+    height: 36px;
+    padding-inline: 15px;
+    color: white;
+    background-color: rgba(254, 44, 85, 1);
+    border-color: rgba(254, 44, 85, 1);
+    z-index: 11;
+}
+.upload_page .upload_container .upload_content .uploader .uploader_card button:hover {
+    background-color: rgba(234, 40, 78, 1);
+    border-color: rgba(234, 40, 78, 1);
+}
+.upload_page .upload_container .upload_content .upload_form {
+    margin-left: 24px;
+    flex: 1 1 0%;
+    max-width: 704px;
+    min-width: 0;
+}
+.upload_page .upload_container .upload_content .upload_form h6 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 10px;
+    position: relative;
+}
+.upload_page .upload_container .upload_content .upload_form .note_input {
+    width: 100%;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 13px 80px 13px 16px;
+    margin-bottom: 20px;
+    display: flex;
+    position: relative;
+}
+.upload_page .upload_container .upload_content .upload_form .note_input h6 {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 17px;
+}
+.upload_page .upload_container .upload_content .upload_form .note_input input[type='text'] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgba(22, 24, 35, 1);
+    width: 100%;
+}
+.upload_page .upload_container .upload_content .upload_form .image_cover .image_cover_field {
+    position: relative;
+    line-height: 0;
+    padding: 6px;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+.upload_page .upload_container .upload_content .upload_form .image_cover .image_cover_field .cover_empty_wrap {
+    max-width: 690px;
+    height: 150px;
+}
+.upload_page
+    .upload_container
+    .upload_content
+    .upload_form
+    .image_cover
+    .image_cover_field
+    .cover_empty_wrap
+    .cover_empty_candidate {
+    width: 84.2px;
+    height: 100%;
+    background-color: rgba(22, 24, 35, 0.03);
+    object-fit: cover;
+}
+.upload_page .upload_container .upload_content .upload_form .note span {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: rgba(22, 24, 35, 0.5);
+    white-space: pre;
+    position: absolute;
+    right: 0;
+}
+.upload_page .upload_container .upload_content .upload_form .private_seen {
+    position: relative;
+    margin-bottom: 24px;
+}
+.upload_page .upload_container .upload_content .upload_form .private_seen .private_input {
+    display: flex;
+    padding: 7px 12px;
+    width: 300px;
+    height: 36px;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    background: rgb(255, 255, 255);
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+}
+.upload_page .upload_container .upload_content .upload_form .private_seen .private_input input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgba(22, 24, 35, 1);
+    max-width: 90%;
+    font-size: 16px;
+    padding: 0;
+    cursor: pointer;
+}
+.upload_page .upload_container .upload_content .upload_form .private_seen .private_input .fa-caret-down {
+    width: 10px;
+    position: absolute;
+    right: 12px;
+}
+.upload_page .upload_container .upload_content .upload_form .private_seen .animation .fa-caret-down {
+    animation: downToUp 0.5s forwards;
+}
+@keyframes downToUp {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+.upload_page .upload_container .upload_content .upload_form .private_seen .animation_back .fa-caret-down {
+    animation: upToDown 0.5s forwards;
+}
+@keyframes upToDown {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.upload_page .upload_container .upload_content .upload_form .private_seen ul {
+    text-decoration: none;
+    list-style: none;
+    color: rgba(22, 24, 35, 1);
+    font-size: 16px;
+    position: absolute;
+    top: 70px;
+    max-height: 1000px;
+    left: 0px;
+    display: inline-flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-top: 4px;
+    border-radius: 4px;
+    padding: 4px 0px;
+    z-index: 111;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 12%) 0px 2px 12px;
+    width: 300px;
+    animation: showDropdown 0.5s forwards;
+    height: 0;
+    transition: 0.5s ease;
+}
+@keyframes showDropdown {
+    0% {
+        height: 0;
+        opacity: 0;
+    }
+    100% {
+        height: max-content;
+        opacity: 1;
+    }
+}
+.upload_page .upload_container .upload_content .upload_form .private_seen ul li {
+    width: 100%;
+    display: flex;
+    background: rgb(255, 255, 255);
+    padding: 10px 12px;
+    font-size: 16px;
+    line-height: 22px;
+    box-sizing: border-box;
+    color: rgb(22, 24, 35);
+    cursor: pointer;
+}
+.upload_page .upload_container .upload_content .upload_form .private_seen ul li:hover {
+    background-color: rgba(22, 24, 35, 0.06);
+}
+/* .upload_page .upload_container .upload_content .upload_form .private_action {
+    display: flex;
+    align-items: center;
+} */
+.upload_page .upload_container .upload_content .upload_form .private_action input[type='checkbox'] {
+    background-color: transparent;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    text-decoration: none;
+    appearance: none;
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 2px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.upload_page .upload_container .upload_content .upload_form .private_action input[type='checkbox']:after {
+    content: '\f00c';
+    font-size: 10px;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 700;
+    color: white;
+    margin-left: 2px;
+}
+.upload_page .upload_container .upload_content .upload_form .private_action input[type='checkbox']:checked {
+    background-color: rgba(254, 44, 85, 1);
+    color: white;
+}
+.upload_page
+    .upload_container
+    .upload_content
+    .upload_form
+    .private_action
+    .wrapper_checkbox:hover
+    input[type='checkbox'] {
+    border-color: rgba(254, 44, 85, 1);
+}
+.upload_page .upload_container .upload_content .upload_form .private_action label {
+    margin-right: 30px;
+}
+.wrapper_checkbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.wrapper_checkbox .fa-check {
+    color: white;
+    position: absolute;
+    left: 7px;
+    width: 10px;
+}
+.private_seen .check_copyright {
+    display: flex;
+    align-items: center;
+}
+.private_seen .check_copyright input[type='checkbox'] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 44px;
+    height: 24px;
+    background: rgba(22, 24, 35, 0.12);
+    border-radius: 22px;
+    margin-left: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.private_seen .check_copyright input[type='checkbox']:before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+    top: 2px;
+    left: 2px;
+}
+.private_seen .check_copyright input[type='checkbox']:checked {
+    background-color: rgb(11, 224, 155);
+}
+.private_seen .check_copyright input[type='checkbox']:checked:before {
+    left: 22px;
+}
+.upload_page .upload_container .upload_content .upload_form .private_seen span {
+    font-size: 12px;
+    color: rgba(22, 24, 35, 0.75);
+    line-height: 1.5;
+}
+.private_seen .attention {
+    padding: 8px 12px;
+    border-radius: 4px;
+    height: 38px;
+    background-color: rgba(22, 24, 35, 0.06);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.upload_page .upload_container .upload_content .upload_form .private_seen .attention span {
+    font-size: 14px;
+    margin-left: 5px;
+}
+.upload_page .upload_container .upload_content .upload_form .upload_button {
+    display: flex;
+}
+.upload_page .upload_container .upload_content .upload_form .upload_button button {
+    font-size: 16px;
+    color: rgba(22, 24, 35, 1);
+    background-color: transparent;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    min-width: 96px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 164px;
+}
+.upload_page .upload_container .upload_content .upload_form .upload_button button:first-child {
+    margin-right: 20px;
+}
+.upload_page .upload_container .upload_content .upload_form .upload_button button:first-child:hover {
+    background-color: rgba(245, 245, 245, 1);
+    border-color: rgba(22, 24, 35, 0.2);
+}
+.upload_page .upload_container .upload_content .upload_form .upload_button button:last-child {
+    background-color: rgba(235, 235, 235, 1);
+    color: rgba(22, 24, 35, 0.34);
+    cursor: not-allowed;
+    border-color: rgba(235, 235, 235, 1);
+}

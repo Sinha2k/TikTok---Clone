@@ -1,0 +1,274 @@
+.navbar_component {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-left: 100px;
+    padding-right: 100px; */
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+    border-bottom: 1px solid rgba(22, 24, 35, 0.12);
+}
+.navbar_component .logo {
+    cursor: pointer;
+    display: flex;
+
+    align-items: center;
+}
+.search_popper {
+    width: 361px;
+}
+.search_popper .wrapper {
+    padding: 10px 0px;
+}
+.search_popper .result_item {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.search_popper .result_item:hover {
+    background-color: rgba(22, 24, 35, 0.03);
+}
+.search_popper .result_item .fa-magnifying-glass {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+.search_popper .result_item p {
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+}
+.navbar_component .search_field {
+    background-color: rgba(22, 24, 35, 0.06);
+    padding: 12px 0 12px 16px;
+    border-radius: 92px;
+    width: 361px;
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid transparent;
+    position: relative;
+}
+.navbar_component .search_field .fa_icons {
+    position: absolute;
+    right: 63px;
+    padding: 0;
+    background-color: transparent;
+    display: none;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+    color: rgba(22, 24, 35, 0.34);
+}
+.navbar_component .search_field span {
+    height: 28px;
+    width: 1px;
+    background-color: rgba(22, 24, 35, 0.12);
+    position: absolute;
+    right: 50px;
+}
+.navbar_component .search_field .search_icon {
+    font-size: 1.3rem;
+    background-color: transparent;
+    color: rgba(22, 24, 35, 0.34);
+    height: 46px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 16px;
+    cursor: pointer;
+    border-bottom-right-radius: 92px;
+    border-top-right-radius: 92px;
+}
+.navbar_component .search_field .search_icon:hover {
+    background-color: rgba(22, 24, 35, 0.06);
+}
+.navbar_component .search_field input {
+    outline: none;
+    border: none;
+    color: black;
+    background-color: transparent;
+    font-size: 16px;
+    height: 46px;
+    width: 252px;
+    font-weight: 400;
+    caret-color: rgba(254, 44, 85, 1);
+}
+.navbar_component .search_field input:not(:placeholder-shown) ~ .search_icon {
+    color: rgba(22, 24, 35, 0.75);
+}
+.navbar_component .search_field input:not(:placeholder-shown) ~ .fa_icons {
+    display: block;
+}
+.navbar_component .search_field:focus-within {
+    border-color: rgba(22, 24, 35, 0.12);
+}
+.navbar_component .icons_right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 264px;
+    height: 36px;
+}
+.navbar_component .icons_right .upload {
+    min-width: 110px;
+    padding: 0 16px;
+    height: 36px;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.navbar_component .icons_right .avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+
+    background-size: cover;
+}
+.plus_icon {
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+}
+
+.dropdown_menu {
+    min-width: 223px;
+    background-color: rgb(255, 255, 255);
+    right: -12px;
+}
+.dropdown_menu ul {
+    min-width: 223px;
+    padding: 8px 0px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    list-style: none;
+}
+.dropdown_menu ul li {
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.dropdown_menu ul li .dropdown_icon {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
+.dropdown_menu ul li:last-child {
+    border-top: 1px solid rgba(22, 24, 35, 0.12);
+}
+.dropdown_menu ul li:hover {
+    background-color: rgba(22, 24, 35, 0.03);
+}
+.inbox_notification {
+    width: 376px;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+}
+.inbox_notification .noti_header {
+    padding-top: 24px;
+    padding-left: 16px;
+    flex: 0 0 auto;
+}
+.inbox_notification .noti_header h4 {
+    color: rgb(22, 24, 35);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0;
+}
+.inbox_notification .noti_header .noti_option {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 16px;
+    display: flex;
+    flex-flow: row wrap;
+}
+.noti_option span {
+    margin-right: 8px;
+    margin-bottom: 12px;
+    padding: 2px 8px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.choose {
+    background-color: #161823;
+    color: white;
+}
+.choose:hover {
+    background-color: #161823;
+}
+.not_choose {
+    background-color: #f1f1f1;
+    color: #161823;
+}
+.not_choose:hover {
+    background-color: rgba(0, 0, 0, 0.12);
+}
+.inbox_notification .noti_body {
+    overflow: auto;
+}
+.inbox_notification .noti_body p {
+    color: rgba(22, 24, 35, 0.5);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0px 16px;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+.account_suggest_title {
+    height: 30px;
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: rgba(22, 24, 35, 0.5);
+}
+.account_suggest {
+    padding: 9px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.account_suggest .suggest_avatar {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.account_suggest .suggest_content p {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(22, 24, 35, 0.5);
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0;
+    margin: 0;
+}
+.account_suggest .suggest_content h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    overflow: hidden;
+}
+.account_suggest:hover {
+    background-color: rgba(22, 24, 35, 0.03);
+}

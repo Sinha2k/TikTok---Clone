@@ -1,0 +1,36 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+        Helvetica Neue, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        color-scheme: dark;
+    }
+    body {
+        color: black;
+        background: white;
+    }
+}
+@import url('../components/Navbar/style.css');
+@import url('../components/Sidebar/style.css');
+@import url('../components/utils/AccountItem/style.css');
+@import url('../components/utils/PostItem/style.css');
+@import url('../components/utils/Popper/style.css');
+@import url('../pages/posts/style.css');
+@import url('../components/utils/CommentItem/style.css');
+@import url('../components/utils/NotificationItem/style.css');
+@import url('../components/utils/Video/style.css');
+@import url('../pages/upload/style.css');

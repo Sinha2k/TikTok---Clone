@@ -1,0 +1,341 @@
+.detail_post_page {
+    display: flex;
+    position: fixed;
+    background: rgb(255, 255, 255);
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+}
+.detail_post_page .left_part {
+    background: rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    padding: 0px 80px;
+    width: calc(100vw - 544px);
+}
+.detail_post_page .left_part video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 10;
+}
+.detail_post_page .left_part .tiktok_icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    border-radius: 50px;
+    left: 84px;
+}
+.detail_post_page .left_part .fa-xmark,
+.fa-angle-up,
+.fa-angle-down {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.3s ease 0s;
+    color: white;
+    z-index: 99;
+}
+.detail_post_page .left_part .fa-xmark {
+    top: 20px;
+    left: 20px;
+}
+.detail_post_page .left_part .fa-angle-up {
+    right: 20px;
+    top: calc(50% - 48px);
+}
+.detail_post_page .left_part .fa-angle-down {
+    right: 20px;
+    top: calc(50% + 8px);
+}
+.detail_post_page .left_part .fa-font-awesome {
+    margin-right: 8px;
+}
+.detail_post_page .left_part .report {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 16px;
+    background-color: rgba(255, 255, 255, 0.12);
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 100px;
+    position: absolute;
+    top: 20px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    right: 20px;
+}
+.detail_post_page .left_part .fa-xmark:hover,
+.detail_post_page .left_part .fa-angle-up:hover,
+.detail_post_page .left_part .fa-angle-down:hover,
+.detail_post_page .left_part .report:hover {
+    opacity: 0.7;
+}
+.detail_post_page .left_part .image_background {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    filter: blur(2px);
+    left: 50%;
+    top: 50%;
+    transform: scale(11);
+    opacity: 0.3;
+    background: center center / cover no-repeat;
+}
+.detail_post_page .right_part {
+    width: 544px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+}
+.detail_post_page .right_part .detail_header {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 22px 32px 15px;
+    position: relative;
+    flex: 0 0 82px;
+}
+.detail_post_page .right_part .detail_header .detail_avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-size: cover;
+    object-fit: cover;
+}
+.detail_post_page .right_part .detail_header .detail_postedBy {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    margin-right: 12px;
+    max-width: 310px;
+    width: 310px;
+}
+.detail_post_page .right_part .detail_header .detail_postedBy span:first-child {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+}
+.detail_post_page .right_part .detail_header .detail_postedBy span:last-child {
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+}
+.detail_post_page .right_part .detail_header div button {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    color: rgb(254, 44, 85);
+    border-color: rgb(254, 44, 85);
+    background-color: rgb(255, 255, 255);
+    min-width: 106px;
+    min-height: 28px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    display: flex;
+    position: relative;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 6px 8px;
+    user-select: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    justify-self: flex-end;
+}
+.detail_post_page .right_part .detail_body .detail_caption {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+}
+.detail_post_page .right_part .detail_body {
+    padding: 0px 32px;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+.detail_post_page .right_part .detail_body .detail_music {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+.detail_post_page .right_part .detail_body .detail_music span:hover {
+    text-decoration: underline;
+}
+.function_link {
+    position: relative;
+    padding: 16px 0px;
+}
+.function_link .detail_function {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.function_link .detail_function .icon_left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.function_link .detail_function .icon_right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.function_link .detail_function .icon_left .detail_icon_item {
+    display: flex;
+    align-items: center;
+}
+.detail_post_page .left_part .left_part_icons {
+    width: 25px;
+    height: 25px;
+}
+.detail_post_page .function_link .detail_function .icon_left .detail_icon_item .fa-heart,
+.detail_post_page .function_link .detail_function .icon_left .detail_icon_item .fa-comment-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: all 200ms ease-in-out 0s;
+    background-color: rgba(22, 24, 35, 0.06);
+    padding: 6px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+.function_link .detail_function .icon_right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.function_link .detail_function .icon_left .detail_icon_item strong {
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+}
+.function_link .detail_link {
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    box-sizing: border-box;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    border-radius: 2px;
+}
+.function_link .detail_link p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    flex: 1 1 auto;
+    padding: 7px 0px 5px 12px;
+    background-color: rgba(22, 24, 35, 0.06);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.function_link .detail_link button {
+    border: none;
+    background: none;
+    outline: none;
+    color: rgb(22, 24, 35);
+    font-weight: 700;
+    flex: 0 0 auto;
+    cursor: pointer;
+    padding: 7px 18px;
+}
+.detail_post_page .right_part .detail_comments {
+    width: 100%;
+    padding: 24px 32px;
+    box-sizing: border-box;
+    background-color: rgb(248, 248, 248);
+    border-top: 1px solid rgba(18, 18, 18, 0.12);
+    border-bottom: 1px solid rgba(18, 18, 18, 0.12);
+    overflow: hidden auto;
+    flex-grow: 1;
+    margin-left: 0;
+}
+.comment_input {
+    flex: 0 0 auto;
+    background-color: rgb(255, 255, 255);
+    margin: 0px 30px;
+    padding: 21px 0px;
+    display: flex;
+    align-items: center;
+}
+.comment_input .input_icons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background-color: rgba(22, 24, 35, 0.06);
+    box-sizing: border-box;
+    border: 1px solid rgba(18, 18, 18, 0.12);
+    border-radius: 8px;
+    padding: 10px 9px;
+    width: 432px;
+    max-width: 432px;
+}
+.comment_input .input_icons input {
+    outline: none;
+    color: rgba(22, 24, 35, 0.75);
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 17px;
+    user-select: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    position: relative;
+    border: none;
+    width: 328px;
+    max-width: 328px;
+    caret-color: rgba(254, 44, 85, 1);
+}
+.comment_input .input_icons .comment_icon {
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+.comment_input span {
+    font-size: 14px;
+    margin-left: 10px;
+    color: #16182357;
+    cursor: default;
+}
+.button_active span {
+    color: rgba(254, 44, 85, 1);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+/* .detail_post_page .left_part .video_wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 10;
+} */

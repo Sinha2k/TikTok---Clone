@@ -1,0 +1,96 @@
+.comment_card {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+    position: relative;
+}
+.comment_card .comment_avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.comment_card .comment_body {
+    flex: 1 1 auto;
+    max-width: 378px;
+    width: 378px;
+}
+.comment_card .comment_body span:first-child {
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 10px;
+}
+.comment_card .comment_body span:last-child {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(254, 44, 85);
+}
+.comment_card .comment_body p {
+    font-size: 16px;
+    line-height: 22px;
+    white-space: pre-line;
+    word-break: break-word;
+    margin-bottom: 6px;
+    margin-top: 0;
+}
+.comment_card .comment_body .comment_createdAt {
+    display: flex;
+    align-items: center;
+}
+.comment_card .comment_body .comment_createdAt span {
+    color: rgba(22, 24, 35, 0.5);
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 24px;
+}
+.comment_function {
+    margin-left: 18px;
+    padding-right: 2px;
+    width: 30px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #16182380;
+}
+.comment_function span {
+    font-size: 12px;
+    margin-top: 5px;
+}
+.comment_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+.comment_card .fa-ellipsis {
+    opacity: 0;
+}
+.comment_card:hover .fa-ellipsis {
+    opacity: 1;
+    color: black;
+}
+.comment_report {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 8px 16px;
+    min-width: 200px;
+    height: 64px;
+}
+.comment_report .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 30px;
+    height: 64px;
+}
+.comment_report span {
+    margin-left: 20px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}

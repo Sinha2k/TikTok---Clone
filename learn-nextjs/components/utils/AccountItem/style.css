@@ -1,0 +1,118 @@
+.account_card {
+    display: flex;
+    align-items: center;
+    padding: 10px 8px;
+    cursor: pointer;
+}
+.account_card:hover {
+    background-color: rgba(22, 24, 35, 0.03);
+}
+.account_card .account_avatar {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-size: cover;
+}
+.account_card .account_content {
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    height: 32px;
+}
+.account_card .account_title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+.account_card .account_title h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 260px;
+    color: rgb(51, 51, 51);
+    margin-right: 5px;
+    margin-top: -4px;
+}
+.account_card .account_title .fa-circle-check {
+    color: rgb(32, 213, 236);
+    font-size: 0.9rem;
+}
+.account_card .account_content p {
+    font-size: 12px;
+    white-space: nowrap;
+    max-width: 260px;
+    color: gray;
+    margin-left: -8px;
+}
+
+.account_preview {
+    position: relative;
+    width: 320px;
+    box-sizing: border-box;
+    background: rgb(255, 255, 255);
+}
+.account_preview .wrapper {
+    padding: 20px;
+}
+.account_preview .preview_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.account_preview .preview_header .account_avatar {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-size: cover;
+}
+.account_preview .preview_header button {
+    border-radius: 4px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(254, 44, 85);
+    min-width: 106px;
+    min-height: 28px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    display: flex;
+    position: relative;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 6px 8px;
+    user-select: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.account_preview .account_title {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+.account_preview .account_title h4 {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: rgba(22, 24, 35, 1);
+}
+.account_preview .account_title .fa-circle-check {
+    color: rgb(32, 213, 236);
+    font-size: 0.9rem;
+    margin-left: 5px;
+    padding-top: 0;
+    margin-top: 0;
+}
+.account_preview .desc_preview {
+    margin-top: 2px;
+    color: rgba(22, 24, 35, 1);
+    margin-bottom: 0;
+    margin-left: -8px;
+}
+.account_preview .desc_preview span {
+    font-size: 17px;
+}

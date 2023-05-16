@@ -1,0 +1,95 @@
+.sidebar_component{
+    width: 356px;
+    top: 65px;
+    position: fixed;
+    z-index: 99;
+    background: rgba(255, 255, 255, 1.0);
+    padding-right: 8px;
+    padding-left: 20px;
+    overflow-x: hidden;
+    height: 90vh;
+}
+.sidebar_component:hover::-webkit-scrollbar{
+    width: 6px;
+}
+.sidebar_component .sidebar_content{
+    height: fit-content;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(22, 24, 35, .06);
+}
+.sidebar_component .option{
+    width: 340px;
+    margin-top: 10px;
+}
+.sidebar_component .option .option_item{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.sidebar_component .option .option_item:hover{
+    background-color: rgba(22, 24, 35, 0.03);
+    cursor: pointer;
+}
+.sidebar_icons img{
+    margin-top: 10px;
+    fill: rgba(254, 44, 85, 1.0);
+}
+.sidebar_component .option .option_item h2{
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 8px;
+}
+.sidebar_component .option .active {
+    color: rgba(254, 44, 85, 1.0);
+}
+.sidebar_component .suggest_accounts{
+    position: relative;
+    margin-top: 10px;
+    padding: 16px 0px;
+}
+.sidebar_component .suggest_accounts::before{
+    content: "";
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    top: 0;
+    height: 1px;
+    background: rgba(22, 24, 35, 0.12);
+}
+.sidebar_component .suggest_accounts p{
+   font-size: 14px;
+   padding-left: 8px;
+   margin-top: 0px;
+}
+.sidebar_component .suggest_accounts .topic_card{
+    display: flex;
+    box-sizing: border-box;
+    width: fit-content;
+    max-width: 100%;
+    height: 24px;
+    margin-bottom: 12px;
+    padding: 3px 10px;
+    border: 1px solid rgba(22, 24, 35, 0.2);
+    border-radius: 12px;
+    transition: 200ms ease-in-out 0s;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.sidebar_component .suggest_accounts .topic_card:hover{
+    background: rgba(22, 24, 35, 0.03);
+}
+.sidebar_component .suggest_accounts .topic_card p{
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: rgba(22, 24, 35, 0.75);
+    margin-top: -2px;
+}
+.sidebar_component .suggest_accounts .topic_card .topic_icon{
+    opacity: 0.8;
+}
